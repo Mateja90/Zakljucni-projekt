@@ -1,0 +1,15 @@
+{%extends "base.html"%}
+{%block title%}Posamezno sporocilo{%endblock title%}
+
+{% block specs%}
+    <h1>Podatki posameznega sporocila</h1>
+        <p>Id sporocila: {{sporocilo.key.id()}}</p>
+        <p>Prejemnik: {{sporocilo.naslovnik}}</p>
+         <p>Sporocilo: {{sporocilo.vnos}}</p>
+         <p>Datum sporocila: {{sporocilo.nastanek}}</p>
+
+         <a href="/sporocilo/{{sporocilo.key.id()}}/uredi">Uredi</a>
+         <br />
+         <a href="/sporocilo/{{sporocilo.key.id()}}/izbrisi">Izbrisi</a>
+
+{%endblock specs%}

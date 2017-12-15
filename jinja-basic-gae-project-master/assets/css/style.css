@@ -1,0 +1,43 @@
+
+.m{
+  color: blue;
+}
+.r{
+  color: red;
+}
+.ru{
+  color: yellow;
+}
+.z{
+  color: green;
+}
+
+.sredina{
+   width: 500px;
+   margin-left: auto;
+   margin-right: auto;
+
+}
+
+.logo{
+  font-size: 20px;
+}
+
+.login-text{
+  font-size: 40px;
+}
+
+.odmik{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.profile-img {
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 10px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}

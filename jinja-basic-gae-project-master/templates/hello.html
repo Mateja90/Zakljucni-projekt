@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}Novo sporocilo{%endblock title%}
+{% block specs%}
+    <h1>Hello, SmartNinja!</h1>
+    <form method="post" >
+      <input name="naslovnik" placeholder="Naslovnik"/>
+      <p><textarea name="sporocilo" rows="10" cols="80" placeholder="Vnesite sporocilo..." required ></textarea></p>
+
+      <button  type="submit" > Poslji</button>
+    </form>
+    
+{%endblock specs%}

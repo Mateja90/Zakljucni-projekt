@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{% block title %} {%endblock title%}</title>
+  </head>
+  <body>
+      <a href="/">Bmail</a> |
+      <a href="/rezultat">Novo sporocilo</a> |
+      <a href="/seznam-sporocil">Seznam sporocil</a> |
+      <a href="/prejeta-sporocila">Prejeta sporocila</a> |
+      <a href="{{logout_url}}">Logout</a> |
+      <a href="/vreme">Vreme</a>
+
+      <br>
+      <br>
+
+      {% block specs%} {% endblock specs %}
+  </body>
+</html>

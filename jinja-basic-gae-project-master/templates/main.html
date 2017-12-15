@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Bmail</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css"/>
+<link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+<link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/bootstrap.js">  </script>
+  </head>
+  <body>
+    <div class="container">
+        <div class="row text-center logo odmik">
+        <h2>  <strong class="m">B</strong>
+          <strong class="r">o</strong>
+          <strong class="ru">o</strong>
+          <strong class="m">g</strong>
+          <strong class="z">l</strong>
+          <strong class="r">e</strong></h2>
+        </div>
+
+        <div class="sredina text-center odmik">
+            <h2>One account. All of Google.</h2>
+            <h4 class="text-center odmik">Sign in with your Google Account</h4>
+        </div>
+
+        <div class="jumbotron sredina">
+        <img src="http://www.fashionailsspa.com/html/images/global/default-avatar.png" class="profile-img">
+                <form >
+                  {% if not logged_in %}
+
+                  <h3>Hello anonimna ninja!</h3>
+
+                  <p>Prosim prijavi se: <a href="{{ login_url }}">Login</a></p>
+
+
+                  {% endif %}
+
+                    <input type="text" class="form-control" placeholder="Email" required autofocus>
+                    <input type="password" class="form-control" placeholder="Password" required>
+
+                    <a href="{{ login_url }}"><button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button></a>
+                </form>
+
+              </div>
+              <div class="sredina text-center">
+            <a href="#" >Create an account </a>
+          </div>
+        </div>
+
+  </body>
+</html>

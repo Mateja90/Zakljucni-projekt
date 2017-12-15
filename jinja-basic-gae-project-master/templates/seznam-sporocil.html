@@ -1,0 +1,11 @@
+{% extends "base.html"%}
+{%block title%}Seznam poslanih sporocil{%endblock title%}
+
+{%block specs%}
+    <h1>Seznam poslanih sporocil</h1>
+    {%for sporocilo in seznam%}
+    <p><a href="/sporocilo/{{sporocilo.key.id()}}" > {{sporocilo.key.id()}}</a></p><p>{{sporocilo.naslovnik}}</p><p>{{sporocilo.vnos}} </p><p> {{sporocilo.nastanek}}</p>
+    <hr />
+    {%endfor%}
+
+{%endblock specs%}

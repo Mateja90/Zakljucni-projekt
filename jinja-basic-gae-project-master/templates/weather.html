@@ -1,0 +1,18 @@
+{%extends "base.html"%}
+
+{% block title %}Vreme{% endblock title %}
+
+{% block specs %}
+
+<form action="/vreme" method="post">
+  Location: <input type="text" name="location" />
+  <button type="submit">Get weather</button>
+</form>
+{% if data and data.cod == 200 %}
+ <p>  Weather in {{data.name}} is {{data.main.temp}} degrees celsium.</p>
+ <p> Wind speed: {{data.wind.speed}}</p>
+ {% elif data  %}
+  <p>{{data.message}}</p>
+{% endif %}
+
+{% endblock specs %}
